@@ -1,0 +1,56 @@
+[
+  {
+		"id": 0,
+    "length": "10 to 12 inches",
+    "origin": "Europe",
+    "name": "Spot"
+  },
+  {
+		"id": 1,
+    "length": "12 to 16 inches",
+    "origin": "Asia",
+    "name": "Abyssinian"
+  },
+	{
+		"id": 2,
+    "length": "14 to 15 inches",
+    "origin": "US",
+    "name": "Simon"
+  },
+	{
+		"id": 3,
+    "length": "11 to 13 inches",
+    "origin": "Europe",
+    "name": "Simon"
+  },
+	{
+		"id": 3,
+    "length": "9 to 10 inches",
+    "origin": "US",
+    "name": "Smoky"
+  },
+	{
+		"id": 4,
+    "length": "12 to 14 inches",
+    "origin": "Europe",
+    "name": "Smoky"
+  },
+	{
+		"id": 5,
+    "length": "12 to 14 inches",
+    "origin": "Asia",
+    "name": "Salem"
+  },
+	{
+		"id": 6,
+    "length": "10 to 12 inches",
+    "origin": "Europe",
+    "name": "Scar"
+  },
+	{
+		"id": 7,
+    "length": "10 to 12 inches",
+    "origin": "US",
+    "name": "Storm"
+  }
+]
