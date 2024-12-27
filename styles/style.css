@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+p {
+    margin: 0;
+}
+
+/* nav {
+} */
+nav .flex {
+    justify-content: flex-start;
+    margin-bottom: 0;
+}
+
+.nav__title {
+    padding: 0.25em;
+}
+.nav__title p {
+    font-weight: 600;
+    font-size: 1.2em;
+    width: 50%;
+    text-align: right;
+}
+
+.nav__item a {
+    display: block;
+    color: white;
+    padding: 0.5em 0.75em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.bg-primary-subtle a {
+    color: black;
+}
+.cover-img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.cover-img p {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+.cover-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 50px;
+    text-align: right;
+}
+
+button {
+    padding: 10px;
+    background-color: #5c5c5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* -------------------------------------- CSS -------------------------------------- */
+.controls {
+    padding: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.playground {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.box {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+}
+/* -------------------------------------- TODO -------------------------------------- */
+
+.todo-container {
+    max-width: 500px;
+    margin-inline: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.todo-header {
+    margin-top: 1em;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#add-btn:hover {
+    background-color: #0056b3;
+}
+
+#todo-count {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.todo-item.completed {
+    opacity: 0.75;
+    & button {
+        display: none;
+    }
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+.todo-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* -------------------------------------- MACSKÁK -------------------------------------- */
+.stilus-container {
+    display: flex;
+    min-height: 60vh;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+.filters input {
+    flex: 1;
+    padding: 8px;
+    min-width: 200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th,
+td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* thead {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+button.delete-button {
+    background-color: #ff4d4d;
+}
+
+button.delete-button:hover {
+    background-color: #d93636;
+} */

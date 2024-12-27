@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Webprog 1 Beadandó</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-..."
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="nav__title bg-primary flex">
+                    <p class="text-white">Minta János</p>
+                    <p class="text-white">ASDAS21312</p>
+                </div>
+                <div class="cover-img">
+                    <p>I like to look at one or two random quotes each morning. It can be a good exercise for journaling prompts.</p>
+                    <img
+                        src="https://images.unsplash.com/photo-1734216736164-6777c63f862f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="image name"
+                        class=""
+                    />
+                </div>
+                <nav class="bg-primary">
+                    <ul class="flex">
+                        <li class="nav__item"><a href="about.html">Rólam</a></li>
+                        <li class="nav__item"><a href="stilus.html">CSS</a></li>
+                        <li class="nav__item bg-primary-subtle"><a href="todo.html">TODO</a></li>
+                        <li class="nav__item"><a href="macskak.html">Macskák</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="todo-container">
+                    <div class="todo-header">
+                        <input type="text" id="todo-input" placeholder="Írd be az új teendőt" />
+                        <button id="add-btn" class="btn btn-primary">Hozzáadás</button>
+                    </div>
+                    <p id="todo-count">Jelenleg 0 befejezetlen teendő van.</p>
+                    <ul id="todo-list"></ul>
+                </div>
+            </main>
+        </div>
+        <script src="scripts/todo.js"></script>
+    </body>
+</html>
