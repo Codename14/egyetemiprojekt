@@ -26,7 +26,9 @@ const updateTable = (data) => {
             <td>${cat.origin}</td>
             <td>${cat.length}</td>
             <td>
-                <button class="btn btn-danger btn-sm delete-button" data-id="${cat.id}">Törlés</button>
+                <button class="btn btn-danger btn-sm delete-button" data-id="${
+                    cat.id
+                }"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
             </td>
         `;
 
@@ -36,7 +38,8 @@ const updateTable = (data) => {
     // Törlés gombok eseménykezelése
     document.querySelectorAll('.delete-button').forEach((button) => {
         button.addEventListener('click', (e) => {
-            const id = e.target.getAttribute('data-id');
+            const buttonElement = e.target.closest('button'); // Legközelebbi <button> elem keresése
+            const id = buttonElement.getAttribute('data-id'); // data-id attribútum lekérése
             deleteCat(id);
         });
     });
