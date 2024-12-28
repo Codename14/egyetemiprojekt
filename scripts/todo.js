@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // html renderelni a todot
     const renderTodos = () => {
         todoList.innerHTML = '';
+
+        // rendezni a listát, a befejezettek legyenen alul
         todos.sort((a, b) => a.completed - b.completed);
 
         todos.forEach((todo, index) => {
@@ -53,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (button.classList.contains('delete-btn')) {
             todos.splice(index, 1); //delete todo
         } else if (button.classList.contains('complete-btn')) {
-            todos[index].completed = !todos[index].completed; // meg
+            todos[index].completed = !todos[index].completed;
         }
 
         renderTodos();
