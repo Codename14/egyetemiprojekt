@@ -148,6 +148,8 @@ button {
 
 .todo-item {
     display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -157,6 +159,10 @@ button {
     background-color: #fff;
 }
 
+.todo-item span {
+    flex-wrap: wrap;
+    text-wrap: balance;
+}
 .todo-item.completed {
     opacity: 0.75;
     & button {
@@ -169,6 +175,7 @@ button {
 .todo-buttons {
     display: flex;
     gap: 10px;
+    flex-shrink: 0;
 }
 
 /* -------------------------------------- MACSKÁK -------------------------------------- */
