@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const todoCount = document.getElementById('todo-count');
     let todos = [];
 
-    // Update the count of incomplete todos
+    // frissíteni a todok számát
     const updateTodoCount = () => {
         const incompleteCount = todos.filter((todo) => !todo.completed).length;
         todoCount.textContent = `Jelenleg ${incompleteCount} befejezetlen teendő van.`;
     };
 
-    // Render the todo list
+    // html renderelni a todot
     const renderTodos = () => {
         todoList.innerHTML = '';
         todos.sort((a, b) => a.completed - b.completed);
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateTodoCount();
     };
 
-    // Add new todo
+    // új todo
     addBtn.addEventListener('click', () => {
         const text = todoInput.value.trim();
         if (text === '') {
@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTodos();
     });
 
-    // Handle click events on the todo list
     todoList.addEventListener('click', (e) => {
         // Kiválasztjuk a gombot, függetlenül attól, hogy az SVG ikonra kattintottak-e
         const button = e.target.closest('.delete-btn, .complete-btn');
@@ -52,9 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const index = button.dataset.index;
 
         if (button.classList.contains('delete-btn')) {
-            todos.splice(index, 1); // Delete the todo
+            todos.splice(index, 1); //delete todo
         } else if (button.classList.contains('complete-btn')) {
-            todos[index].completed = !todos[index].completed; // Toggle completed status
+            todos[index].completed = !todos[index].completed; // meg
         }
 
         renderTodos();
