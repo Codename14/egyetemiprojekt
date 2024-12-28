@@ -111,7 +111,6 @@ button {
 /* -------------------------------------- TODO -------------------------------------- */
 
 .todo-container {
-    max-width: 500px;
     margin-inline: auto;
     padding: 20px;
     border: 1px solid #ddd;
