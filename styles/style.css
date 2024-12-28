@@ -15,9 +15,8 @@ p {
     margin: 0;
 }
 
-/* nav {
-} */
 nav .flex {
+    padding: 0em;
     justify-content: flex-start;
     margin-bottom: 0;
 }
