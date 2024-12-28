@@ -38,7 +38,7 @@ const updateTable = (data) => {
     // Törlés gombok eseménykezelése
     document.querySelectorAll('.delete-button').forEach((button) => {
         button.addEventListener('click', (e) => {
-            const buttonElement = e.target.closest('button'); // Legközelebbi <button> elem keresése
+            const buttonElement = e.target.closest('button'); // Legközelebbi <button> elem keresése - ez azért kell mert svg van a buttonon belül
             const id = buttonElement.getAttribute('data-id'); // data-id attribútum lekérése
             deleteCat(id);
         });

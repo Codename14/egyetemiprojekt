@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     todoList.addEventListener('click', (e) => {
         // Kiválasztjuk a gombot, függetlenül attól, hogy az SVG ikonra kattintottak-e
-        const button = e.target.closest('.delete-btn, .complete-btn');
+        const button = e.target.closest('.delete-btn, .complete-btn'); //ez azért kell mert svg van a buttonon belül
         if (!button) return; // Ha nem egy gombra kattintottunk, akkor ne csináljunk semmit
 
         const index = button.dataset.index;
