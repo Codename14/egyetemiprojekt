@@ -5,6 +5,12 @@
     text-decoration: none;
     list-style: none;
 }
+
+.max-width {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
 p {
     margin: 0;
 }
@@ -171,7 +177,7 @@ button {
 .stilus-container {
     display: flex;
     min-height: 60vh;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1000px) {
         flex-direction: column;
     }
 }
