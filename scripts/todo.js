@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // frissíteni a todok számát
     const updateTodoCount = () => {
         const incompleteCount = todos.filter((todo) => !todo.completed).length;
-        todoCount.textContent = `Jelenleg ${incompleteCount} befejezetlen teendő van.`;
+        todoCount.textContent = `Jelenleg ${incompleteCount} befejezetlen teendőd van.`;
     };
 
     // html renderelni a todot

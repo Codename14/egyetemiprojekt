@@ -184,6 +184,7 @@ button {
     display: flex;
     gap: 10px;
     margin-bottom: 1em;
+    padding: 0.5em;
 }
 .filters input {
     flex: 1;
@@ -200,6 +201,32 @@ td {
     text-align: left;
     padding: 10px;
     border: 1px solid #ddd;
+}
+
+@media (max-width: 500px) {
+    .filters {
+        flex-direction: column;
+    }
+    th {
+        display: none;
+    }
+    td {
+        display: flex;
+        justify-content: space-between;
+    }
+    td::before {
+        /* font-weight: 700; */
+        font-weight: bold;
+        /* text-decoration: underline; */
+        content: attr(data-cell) ': ';
+        text-transform: capalize;
+    }
+    /* td:nth-child(2n) {
+        background: hsla(20 2, 100%, 50%, 0.25);
+    } */
+    tr:nth-child(2n) {
+        background-color: #f9f9f9; /* Világosszürke */
+    }
 }
 
 /* thead {
